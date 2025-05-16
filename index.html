@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feira Virtual Campo-Cidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-overlay">
+      <h1>Feira Virtual Campo-Cidade</h1>
+      <p>Conectando produtores rurais com consumidores urbanos</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Produtos</a>
+    <a href="#">Receitas</a>
+    <a href="#">Eventos</a>
+    <a href="#">Contato</a>
+    <span id="carrinho">Carrinho: <span id="contador">0</span></span>
+  </nav>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <button class="botao" onclick="toggleProdutos()">Mostrar/Ocultar Produtos</button>
+  </div>
+
+  <section class="produtos" id="lista-produtos">
+    <div class="produto">
+      <img src="img/mel.png" alt="Mel Orgânico">
+      <h3>Mel Orgânico</h3>
+      <p>Produtor: Dona Ana</p>
+      <p>R$ 25,00</p>
+      <button class="botao comprar">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="img/queijo.png" alt="Queijo Artesanal">
+      <h3>Queijo Artesanal</h3>
+      <p>Produtor: Sítio Bom Gosto</p>
+      <p>R$ 35,00</p>
+      <button class="botao comprar">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="img/sabonete.png" alt="Sabonetes Naturais">
+      <h3>Sabonetes Naturais</h3>
+      <p>Produtor: Sabão Raiz</p>
+      <p>R$ 15,00</p>
+      <button class="botao comprar">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="img/café.png" alt="Café Artesanal">
+      <h3>Café Artesanal</h3>
+      <p>Produtor: Fazenda Boa Terra</p>
+      <p>R$ 20,00</p>
+      <button class="botao comprar">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="img/pao.png" alt="Pães Caseiros">
+      <h3>Pães Caseiros</h3>
+      <p>Produtor: Dona Maria</p>
+      <p>R$ 10,00</p>
+      <button class="botao comprar">Comprar</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Feira Virtual Campo-Cidade</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
