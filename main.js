@@ -1,17 +1,14 @@
-// Botão de visibilidade
 function toggleProdutos() {
-  const lista = document.getElementById("lista-produtos");
-  lista.style.display = (lista.style.display === "none") ? "flex" : "none";
+const lista = document.getElementById("lista-produtos");
+const botao = document.querySelector(".botao"); // Seleciona o botão de visibilidade
+
+if (lista.style.display === "none") {
+lista.style.display = "flex";
+botao.style.backgroundColor = "#228B22"; // Verde
+botao.textContent = "Ocultar Produtos";
+} else {
+lista.style.display = "none";
+botao.style.backgroundColor = "#B22222"; // Vermelho
+botao.textContent = "Mostrar Produtos";
 }
-
-// Carrinho
-let contador = 0;
-const contadorEl = document.getElementById("contador");
-
-document.querySelectorAll(".comprar").forEach(botao => {
-  botao.addEventListener("click", () => {
-    contador++;
-    contadorEl.textContent = contador;
-    alert("Produto adicionado ao carrinho!");
-  });
-});
+}
